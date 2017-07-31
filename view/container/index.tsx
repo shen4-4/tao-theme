@@ -1,25 +1,45 @@
-import * as React from 'react';
-import {observer} from 'mobx-react';
-import { RouteComponentProps } from 'react-router-dom';
-import "antd/dist/antd.less";
+import * as React from 'react'
+import {observer} from 'mobx-react'
+import { RouteProps } from 'react-router-dom'
+import { Layout, Menu } from 'antd'
+import "antd/dist/antd.less"
 import './index.css'
 
-interface Props extends RouteComponentProps<any> {
+const { Header, Content, Footer } = Layout
+
+interface Props extends RouteProps {
   children: any,
-  params: any,
 }
 
 @observer
 export class App extends React.Component<Props, {}> {
+  // 页面跳转
+  handleToPage = (e:any) => {
+  }
   render() {
     return (
-      <div className="container">
-        <header className="main-header"></header>
-        <main>
+      <Layout className="container">
+        <Header className='header'>
+          <div className="logo"> luotaoruby </div>
+          <Menu
+            theme="light"
+            mode="horizontal"
+            defaultSelectedKeys={['1']}
+            className='menu'
+            onClick={this.handleToPage}
+          >
+            <Menu.Item className ='menuItem' key="index">首页</Menu.Item>
+            <Menu.Item className ='menuItem' key="archive">归档</Menu.Item>
+            <Menu.Item className ='menuItem' key="about">关于</Menu.Item>
+          </Menu>
+        </Header>
+        <Content className='content'>
           {this.props.children}
-        </main>
-        <footer className="main-footer"></footer>
-      </div>
-      );
+        </Content>
+        <Footer className='footer'>
+          ヽ( ^∀^)ﾉ
+        </Footer>
+      </Layout>
+      )
     }
-};
+}

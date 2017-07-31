@@ -213,3 +213,37 @@ input:read-only {
 .ant-table .ant-table-tbody > tr > td {
 	white-space: nowrap;
 }
+
+.header {
+    background: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+.memu {
+    line-height: 50px;
+}
+
+.logo {
+  width: 120px;
+  background: #fff;
+  color: #865aad;
+  float: left;
+  font-size: x-large;
+  margin-right: 30px;
+  font-weight: 500
+}
+.menuItem {
+    font-size: medium;
+    margin-right: 10px;
+}
+.content {
+    padding: 0 30px;
+    margin-top: 30 ;
+}
+
+.footer{
+    height: 380px;
+    margin-top: 30px;
+    text-align: center;
+   /* background: url(./../../../image/love.jpg) 还没想好怎么搞*/
+}

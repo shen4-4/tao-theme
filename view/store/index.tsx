@@ -1,5 +1,5 @@
 import { CommonStore } from './common'
-import { AuthStore } from './../pages/auth/store'
+import { AuthStore } from './../pages/store'
 
 const store = {
   commonStore: new CommonStore(),

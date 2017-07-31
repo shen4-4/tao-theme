@@ -1,6 +1,6 @@
 import {observable, action, useStrict} from 'mobx';
 import { cloneDeep } from 'lodash'
-import { fetchJSONByGet, fetchJSONByPut, fetchJSONByDelete } from '../../utils/ajax'
+import { fetchJSONByGet, fetchJSONByPut, fetchJSONByDelete } from '../utils/ajax'
 useStrict(true);
 
 export interface FormValue {
