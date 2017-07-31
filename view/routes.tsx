@@ -6,8 +6,8 @@ import { List } from './pages/auth/list'
 const routes = (
   <div>
     <Route component={App} />
-    <Route exact path='/' render={() => <Redirect to="/list" />} />
-    <Route path='/list' component={List} />
+    <Route exact path='/' render={() => <Redirect to="/index" />} />
+    <Route path='/index' component={List} />
   </div>
 )
 
