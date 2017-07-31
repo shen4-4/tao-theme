@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["express", "inversify", "reflect-metadata"],
+    "typeRoots": ["./types"],
+    "outDir": "./dist",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowJs": true
+  },
+  "exclude": [
+    "./server/dubbo",
+    "node_modules"
+  ],
+  "include": [
+    "server"
+  ]
+}
