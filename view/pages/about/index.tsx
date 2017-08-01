@@ -26,7 +26,7 @@ export class About extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div> </div>
+      <div style={{ background: 'lightblue', padding:24, minHeight: 600 }}>~12333</div>
     )
   }
 }

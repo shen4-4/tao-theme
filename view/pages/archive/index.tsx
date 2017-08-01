@@ -25,7 +25,7 @@ export class Archive extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div> </div>
+      <div style={{ background: 'pink', padding:24, minHeight: 600 }}>~12333</div>
     )
   }
 }

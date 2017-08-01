@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {observer} from 'mobx-react'
 import { RouteProps } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Layout, Menu } from 'antd'
 import "antd/dist/antd.less"
 import './index.css'
@@ -15,6 +16,7 @@ interface Props extends RouteProps {
 export class App extends React.Component<Props, {}> {
   // 页面跳转
   handleToPage = (e:any) => {
+
   }
   render() {
     return (
@@ -28,9 +30,9 @@ export class App extends React.Component<Props, {}> {
             className='menu'
             onClick={this.handleToPage}
           >
-            <Menu.Item className ='menuItem' key="index">首页</Menu.Item>
-            <Menu.Item className ='menuItem' key="archive">归档</Menu.Item>
-            <Menu.Item className ='menuItem' key="about">关于</Menu.Item>
+            <Menu.Item className ='menuItem' key="index"><Link to="/index" >首页</Link></Menu.Item>
+            <Menu.Item className ='menuItem' key="archive"><Link to="/archive" >归档</Link></Menu.Item>
+            <Menu.Item className ='menuItem' key="about"><Link to="/about" >关于</Link></Menu.Item>
           </Menu>
         </Header>
         <Content className='content'>
