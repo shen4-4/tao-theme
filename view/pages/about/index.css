@@ -1,0 +1,6 @@
+.panel {
+    background:rgb(255, 255, 255);
+    padding: 30; 
+    min-height: 500;
+   display: flex;
+}

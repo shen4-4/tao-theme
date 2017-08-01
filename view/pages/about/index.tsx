@@ -26,7 +26,7 @@ export class About extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div style={{ background: 'lightblue', padding:24, minHeight: 600 }}>~12333</div>
+      <div className='panel'>~12333</div>
     )
   }
 }

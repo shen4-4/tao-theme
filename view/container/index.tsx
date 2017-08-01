@@ -12,7 +12,6 @@ interface Props extends RouteProps {
   children: any,
 }
 
-@observer
 export class App extends React.Component<Props, {}> {
   // 页面跳转
   handleToPage = (e:any) => {
