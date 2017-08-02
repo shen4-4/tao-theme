@@ -1,6 +1,29 @@
-.panel {
+.panel-about {
     background:rgb(255, 255, 255);
     padding: 30; 
     min-height: 500;
-   display: flex;
+}
+
+.avatar {
+    background: url('./../../image/cat.jpg');
+    width: 6.7rem;
+    height: 6.6rem;
+    border: 2px solid #805da8;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 90px 100px;
+    transition:All 0.4s ease-in-out;
+    display: inline-block;
+}
+.avatar:hover {
+    transform:rotate(360deg);
+}
+
+.name {
+    color: #805da8;
+    font-size: 8.5rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 300;
+    margin-left: 40%;
 }

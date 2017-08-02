@@ -5,6 +5,7 @@ import { Button, Modal, Input, message, Layout, Menu, Breadcrumb } from 'antd'
 import * as clipboard from 'clipboard-js'
 import { FormValue, AuthStore } from '../store'
 import { CommonStore } from '../../store/common'
+import './index.css'
 
 const confirm = Modal.confirm;
 const ButtonGroup = Button.Group
@@ -26,7 +27,11 @@ export class About extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div className='panel'>~12333</div>
+      <div className='panel-about'>
+        <div className='content'>
+          <div className='title'><h2 className='name'>Ta<div className='avatar'></div></h2></div>
+        </div>
+      </div>
     )
   }
 }

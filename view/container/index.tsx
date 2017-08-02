@@ -3,6 +3,7 @@ import {observer} from 'mobx-react'
 import { RouteProps } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { Layout, Menu } from 'antd'
+import moment from 'moment'
 import "antd/dist/antd.less"
 import './index.css'
 
@@ -13,9 +14,18 @@ interface Props extends RouteProps {
 }
 
 export class App extends React.Component<Props, {}> {
-  // 页面跳转
-  handleToPage = (e:any) => {
+  public state = {
+    time: moment().format("dddd  MMMM Do YYYY  h:mm:ss a")
+  }
+  
+  updateTime() {  
+    setInterval(() => {
+      this.setState({ time: moment().format("dddd  MMMM Do YYYY  h:mm:ss a") })
+    }, 1000)
+  }
 
+  componentDidMount() {
+    this.updateTime()
   }
   render() {
     return (
@@ -25,9 +35,8 @@ export class App extends React.Component<Props, {}> {
           <Menu
             theme="light"
             mode="horizontal"
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={['index']}
             className='menu'
-            onClick={this.handleToPage}
           >
             <Menu.Item className ='menuItem' key="index"><Link to="/index" >首页</Link></Menu.Item>
             <Menu.Item className ='menuItem' key="archive"><Link to="/archive" >归档</Link></Menu.Item>
@@ -38,7 +47,7 @@ export class App extends React.Component<Props, {}> {
           {this.props.children}
         </Content>
         <Footer className='footer'>
-          ヽ( ^∀^)ﾉ
+          {this.state.time} <span className='cute'>ヽ( ^∀^)ﾉ</span>
         </Footer>
       </Layout>
       )
