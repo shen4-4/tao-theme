@@ -1,4 +1,4 @@
-#auth
+#tao-theme
 
 ## Setup
 
