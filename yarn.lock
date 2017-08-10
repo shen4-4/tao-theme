@@ -99,6 +99,16 @@
   version "8.0.17"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.0.17.tgz#677bc8c118cfb76013febb62ede1f31d2c7222a1"
 
+"@types/node@^7.0.8":
+  version "7.0.39"
+  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-7.0.39.tgz#8aced4196387038113f6f9aa4014ab4c51edab3c"
+
+"@types/react-dom@^0.14.23":
+  version "0.14.23"
+  resolved "http://registry.npm.taobao.org/@types/react-dom/download/@types/react-dom-0.14.23.tgz#cecfcfad754b4c2765fe5d29b81b301889ad6c2e"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^15.5.1":
   version "15.5.1"
   resolved "http://registry.npm.taobao.org/@types/react-dom/download/@types/react-dom-15.5.1.tgz#f3c3e14c682785923c7d64583537df319442dec1"
@@ -126,7 +136,7 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^15.0.34":
+"@types/react@*", "@types/react@^15.0.16", "@types/react@^15.0.34":
   version "15.0.39"
   resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-15.0.39.tgz#5a820c75cabf4cbfa177a3ab5a9a0634c46b14d1"
 
@@ -4731,6 +4741,15 @@ react-lazy-load@^3.0.10:
     lodash.throttle "^4.0.0"
     prop-types "^15.5.8"
 
+react-particles-js@^1.5.0:
+  version "1.5.0"
+  resolved "http://registry.npm.taobao.org/react-particles-js/download/react-particles-js-1.5.0.tgz#d30313c52941282b8f8f58eaf909056bcf57a2ba"
+  dependencies:
+    "@types/node" "^7.0.8"
+    "@types/react" "^15.0.16"
+    "@types/react-dom" "^0.14.23"
+    react "^15.4.1"
+
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"
   resolved "http://registry.npm.taobao.org/react-proxy/download/react-proxy-3.0.0-alpha.1.tgz#4400426bcfa80caa6724c7755695315209fa4b07"
@@ -4770,7 +4789,7 @@ react-slick@~0.14.2:
     object-assign "^4.1.0"
     slick-carousel "^1.6.0"
 
-react@^15.6.1:
+react@^15.4.1, react@^15.6.1:
   version "15.6.1"
   resolved "http://registry.npm.taobao.org/react/download/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:

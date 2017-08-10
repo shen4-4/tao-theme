@@ -22,7 +22,7 @@ export class List extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div style={{ background: '#fff', padding:24, minHeight: 600 }}>~12333</div>
+      <div style={{ background: '#fff', padding:24, minHeight: 600,}}>~12333</div>
     )
   }
 }

@@ -38,6 +38,7 @@
     "react-aplayer": "^0.1.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "^3.0.0-beta.3",
+    "react-particles-js": "^1.5.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "reflect-metadata": "^0.1.10",

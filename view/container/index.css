@@ -238,8 +238,9 @@ input:read-only {
     margin-right: 10px;
 }
 .content {
-    padding: 0 30px;
-    margin-top: 30 ;
+    margin: 0 40px;
+    margin-top: 30;
+	z-index: 100;
 }
 
 .footer{
