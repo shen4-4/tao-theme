@@ -4,6 +4,7 @@ import { App } from './container/index'
 import { List } from './pages/list'
 import { About } from './pages/about'
 import { Archive } from './pages/archive'
+import { Music } from './pages/music'
 
 const routes = (
   <App>
@@ -11,6 +12,7 @@ const routes = (
     <Route path='/index' component={List} />
     <Route path='/archive' component={Archive} />
     <Route path='/about' component={About} />
+    <Route path='/music' component={Music} />
   </App>
 )
 
