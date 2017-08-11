@@ -155,8 +155,9 @@ export class App extends React.Component<Props, {}> {
           >
             <Menu.Item className ='menuItem' key="index"><Link to="/index" >首页</Link></Menu.Item>
             <Menu.Item className ='menuItem' key="archive"><Link to="/archive" >归档</Link></Menu.Item>
-            <Menu.Item className ='menuItem' key="about"><Link to="/about" >关于</Link></Menu.Item>
             <Menu.Item className ='menuItem' key="music"><Link to="/music" >音乐</Link></Menu.Item>
+            <Menu.Item className ='menuItem' key="movie"><Link to="/movie" >电影</Link></Menu.Item>
+            <Menu.Item className ='menuItem' key="about"><Link to="/about" >关于</Link></Menu.Item>
           </Menu>
         </Header>
         <Content className='content'>
