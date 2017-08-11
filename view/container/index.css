@@ -1,7 +1,7 @@
 body{
 	font-size: 12px;
 	font-family: "Microsoft YaHei","SimHei";
-	cursor: crosshair;
+	cursor: url(./../image/cute.ico), default!important;
 }
 .hide{
 	display: none;
