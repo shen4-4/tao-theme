@@ -1,17 +1,23 @@
 .list {
-    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
     .left-wrapper {
-        // width: 70%;
-        // height: 100%;
+        height: 100%;
+        grid-column: 2 / 7;
         display: grid;
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        margin: 0 auto;
-        &-article{
-            display: flex;
+        .article{
             height: 280px;
-            background-color: lightblue;
+            background-color: white;
         }
+    }
+    .right-wrapper {
+        grid-column: 7 / 9;
+        height: 100px;
+        background-color: white;
     }
 }

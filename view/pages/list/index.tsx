@@ -15,7 +15,7 @@ interface Props extends RouteComponentProps<any> {
 }
 
 @inject('authStore', 'commonStore')
-@observer
+
 export class List extends React.Component<Props, {}> {
 
   public state = {
@@ -26,11 +26,11 @@ export class List extends React.Component<Props, {}> {
     return (
       <div className='list'>
         <div className='left-wrapper'>
-          <div className='list-wrapper-article'></div>
-          <div className='list-wrapper-article'></div>
-          <div className='list-wrapper-article'></div>
-          <div className='list-wrapper-article'></div>
-          <div className='list-wrapper-article'></div>       
+          <div className='article'>1111</div>
+          <div className='article'></div>
+          <div className='article'></div>
+          <div className='article'></div>
+          <div className='article'></div>       
         </div>
         <div className='right-wrapper'>       
         </div>
