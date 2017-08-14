@@ -6,6 +6,8 @@ import * as clipboard from 'clipboard-js'
 import { FormValue, AuthStore } from '../store'
 import { CommonStore } from '../../store/common'
 
+import './index.scss'
+
 interface Props extends RouteComponentProps<any> {
   formValue: FormValue,
   authStore: AuthStore,
@@ -22,7 +24,17 @@ export class List extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div style={{ background: '#fff', padding:24, minHeight: 600,}}>~12333</div>
+      <div className='list'>
+        <div className='left-wrapper'>
+          <div className='list-wrapper-article'></div>
+          <div className='list-wrapper-article'></div>
+          <div className='list-wrapper-article'></div>
+          <div className='list-wrapper-article'></div>
+          <div className='list-wrapper-article'></div>       
+        </div>
+        <div className='right-wrapper'>       
+        </div>
+      </div>
     )
   }
 }

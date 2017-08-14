@@ -1,0 +1,80 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.block {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 20px;*/
+    height: 300px;
+    color: #6347a6;
+    line-height: 1;
+    font-family: 'hobeaux-rococeaux-background', Helvetica;
+    font-weight: 200;
+    transition: all .3s ease;
+    position: relative;
+    &:nth-child(even) {
+        height: 350px;
+        margin-top: -50px;
+    }
+    &:nth-child(6n-4) {
+        height: 350px;
+        margin-top: 0px;
+    }
+    &:hover {
+        .intro {
+            z-index: 100
+        }
+        img{
+            filter: blur(3px);
+        }
+    }
+}
+
+.intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 30% 10%;
+    color:white;
+    h1 {
+        margin-bottom: 40px;
+        a{
+            color: white;
+            font-size: larger;
+        }
+    }
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.heipishu {
+    background: url('./../../image/heipishu.webp');
+    width: 100%;
+    height: 100%;
+    background-size: 300px, 200px;
+    position: absolute;
+}
+.yinhe {
+    background: url('./../../image/yinhe.webp');
+    width: 100%;
+    height: 100%;
+    background-size: 300px, 200px;
+    position: absolute;
+}
+.long {
+    background: url('./../../image/long.webp');
+    width: 100%;
+    height: 100%;
+    background-size: 300px, 200px;
+    position: absolute;
+}

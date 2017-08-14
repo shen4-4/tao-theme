@@ -20,7 +20,8 @@ const webpackConfig = {
       { test:  /\.jsx|\.ts|\.tsx$/, loaders: ['babel-loader', 'awesome-typescript-loader?{configFileName: "tsconfig.client.json"}'] },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.less$/, use: ['style-loader', 'css-loader', `less-loader?{"sourceMap":true,"modifyVars":${JSON.stringify(theme)}}`] },
-      { test: /\.(png|jpg|ico)$/, loader: 'url-loader?limit=8192' },
+      { test: /\.scss$/, use: ['style-loader', 'css-loader', `sass-loader?{"sourceMap":true,"modifyVars":${JSON.stringify(theme)}}`] },
+      { test: /\.(png|jpg|ico|webp)$/, loader: 'url-loader?limit=8192' },
     ]
   },
   resolve: {

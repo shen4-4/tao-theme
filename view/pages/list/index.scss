@@ -1,0 +1,17 @@
+.list {
+    width: 80%;
+    .left-wrapper {
+        // width: 70%;
+        // height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin: 0 auto;
+        &-article{
+            display: flex;
+            height: 280px;
+            background-color: lightblue;
+        }
+    }
+}
