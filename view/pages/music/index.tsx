@@ -3,8 +3,7 @@ import {observer, inject} from 'mobx-react'
 import { RouteComponentProps } from 'react-router-dom'
 import { Button, Modal, Input, message, Layout, Menu, Breadcrumb } from 'antd'
 import { CommonStore } from '../../store/common'
-
-// import ReactAplayer from 'react-aplayer'
+// import {Song} from 'react-music'
 
 interface Props extends RouteComponentProps<any> {
   commonStore: CommonStore,
@@ -19,20 +18,26 @@ export class Music extends React.Component<Props, {}> {
   }
 
   render() {
-    // const props = {
-    //   "autoplay": true,
-    //   "mutex": true,
-    //   "preload": "metadata",
-    //   "music": {
-    //     "author": "Hans Zimmer/Richard Harvey",
-    //     "url": "http://devtest.qiniudn.com/Preparation.mp3",
-    //     "pic": "http://devtest.qiniudn.com/Preparation.jpg"
-    //   }
-    // };
     return (
       <div className='panel'>
-        {/*<ReactAplayer {...props} />*/}
       </div>
     )
   }
 }
+
+
+
+
+// import ReactAplayer from 'react-aplayer'
+
+// const props = {
+//       "autoplay": true,
+//       "mutex": true,
+//       "preload": "metadata",
+//       "music": {
+//         "author": "Hans Zimmer/Richard Harvey",
+//         "url": "http://devtest.qiniudn.com/Preparation.mp3",
+//         "pic": "http://devtest.qiniudn.com/Preparation.jpg"
+//       }
+//     }
+//  <ReactAplayer {...props} />

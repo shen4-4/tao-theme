@@ -13,11 +13,27 @@
         .article{
             height: 280px;
             background-color: white;
+            .title {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 30px;
+            }
+            &-content {
+                margin: 20px;
+                height: 120px;
+                font-size: 14px;
+                text-overflow:ellipsis;
+                overflow: hidden;
+            }
+            .link-all {
+                float: right
+            }
         }
     }
     .right-wrapper {
         grid-column: 7 / 9;
         height: 100px;
         background-color: white;
+        text-align: center
     }
 }
